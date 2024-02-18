@@ -3,40 +3,40 @@ const File = require("./src/file");
 const { rejects, deepStrictEqual } = require("assert");
 
 (async () => {
-  /* {
+  {
     const filePath = "./mocks/emptyFile-invalid.csv";
-    const rejection = new Error(error.FILE_LENGHT_ERROR_MESSAGE);
+    const rejection = new Error(error.FILE_LENGTH_ERROR_MESSAGE);
     const result = File.csvJson(filePath);
 
     await rejects(result, rejection);
   }
   {
     const filePath = "./mocks/fourItems-invalid.csv";
-    const rejection = new Error(error.FILE_LENGHT_ERROR_MESSAGE);
+    const rejection = new Error(error.FILE_LENGTH_ERROR_MESSAGE);
     const result = File.csvJson(filePath);
     await rejects(result, rejection);
-  } */
+  }
   {
     const filePath = "./mocks/threeItems-valid.csv";
     const result = await File.csvJson(filePath);
     const expected = [
       {
-        id: 1,
         name: "Erick",
+        id: 1,
         profession: "Desenvolvedor",
-        age: 18,
+        birthDay: 2006,
       },
       {
-        id: 2,
         name: "Carla",
+        id: 2,
         profession: "Faxineira",
-        age: 35,
+        birthDay: 1989,
       },
       {
-        id: 3,
         name: "Jorge",
+        id: 3,
         profession: "Pedreiro",
-        age: 42,
+        birthDay: 1982,
       },
     ];
 
