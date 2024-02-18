@@ -25,6 +25,13 @@ class File {
   static isValid(csvString, options = DEFAULT_OPTION) {
     const [header, ...fileWithoutHeader] = csvString.split("\n"); // nessa parte "[header, ...fileWithoutHeader]" ele está pegando por linha, então eu digo que a primeira linha é o header, e todo o resto é o corpo
 
+    if (fileWithoutHeader == "") {
+      return {
+        error: error.FILE_LENGTH_ERROR_MESSAGE,
+        valid: false,
+      };
+    }
+
     const isHeaderValid = header === options.fields.join(",");
 
     if (!isHeaderValid) {
@@ -40,7 +47,7 @@ class File {
 
     if (!isContentLengthAccepted) {
       return {
-        error: error.FILE_LENGHT_ERROR_MESSAGE,
+        error: error.FILE_LENGTH_ERROR_MESSAGE,
         valid: false,
       };
     }
