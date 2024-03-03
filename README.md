@@ -1,1 +1,1 @@
-Repositório referente aos meus estudos com JavaScript
+Repositório referente aos meus estudos com JavaScript e TypeScript
