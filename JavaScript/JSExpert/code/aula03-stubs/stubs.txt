@@ -1,0 +1,9 @@
+STUBS
+
+- Utilizados para substituir um retorno de uma api por objetos estáticos(mocks)
+
+- Testa o retorno da api e não o meio dela, como faz os spies 
+
+- Barateia o custo do servidor, porque não faz tantas requisições para ele
+
+- Está partindo do principio que o que foi documentado está 100% correto, e se o que está no mock não estiver identico a documentação, dá erro!
