@@ -1,0 +1,5 @@
+TESTES END-TO-END
+
+- Dá uma melhor garantia da funcionalidade
+- Testa o comportamento da função do ponto de vista do usuário 
+

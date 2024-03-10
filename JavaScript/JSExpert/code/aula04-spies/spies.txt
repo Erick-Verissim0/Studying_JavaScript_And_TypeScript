@@ -1,0 +1,5 @@
+SPIES
+
+- Testa o meio dentro de uma api, ou seja, testa a quantidade de vezes que percorreu um loop for, testa uma recursividade ou até mesmo uma lógica complexa
+
+- Não é feito para testar o retorno da função, quem faz isso são os mocks e os spies
